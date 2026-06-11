@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Swadika Spice Co.</title>
+<style>
+body{font-family:Arial,sans-serif;margin:0;padding:0;background:#faf8f3;color:#2c2c2c}
+.navbar{background:#1a3a1a;padding:15px 0;position:sticky;top:0}
+.nav-container{max-width:1200px;margin:0 auto;padding:0 20px;display:flex;justify-content:space-between;align-items:center}
+.logo{color:white;text-decoration:none;font-size:24px;font-weight:bold}
+.nav-links{display:flex;gap:30px;list-style:none}
+.nav-links a{color:white;text-decoration:none}
+.hero{background:linear-gradient(135deg,#1a3a1a,#2d5a2d);padding:80px 20px;text-align:center;color:white}
+.hero h1{font-size:48px;margin-bottom:20px}
+.hero h1 span{color:#c8a45c}
+.hero p{font-size:18px;margin-bottom:30px}
+.btn{background:#c8a45c;color:#1a3a1a;padding:15px 30px;border-radius:30px;text-decoration:none;font-weight:bold;display:inline-block;margin:5px}
+.trust-bar{background:#f5f0e8;padding:30px 0;text-align:center}
+.trust-container{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.trust-item i{font-size:30px;color:#1a3a1a;margin-bottom:10px}
+.section{padding:60px 20px;max-width:1200px;margin:0 auto}
+.section-header{text-align:center;margin-bottom:40px}
+.section-header h2{font-size:36px;color:#1a3a1a}
+.products-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.product-card{background:white;border-radius:15px;overflow:hidden;box-shadow:0 2px 10px rgba(0,0,0,0.1)}
+.product-image{height:200px;background:#f0ebe0;display:flex;align-items:center;justify-content:center}
+.product-info{padding:20px}
+.product-info h3{color:#1a3a1a;margin-bottom:10px}
+.price{font-size:24px;font-weight:bold;color:#1a3a1a}
+.btn-add{background:#1a3a1a;color:white;border:none;padding:10px 20px;border-radius:8px;cursor:pointer;width:100%;margin-top:10px}
+.quality-section{background:linear-gradient(135deg,#1a3a1a,#0f2a0f);color:white;padding:60px 20px}
+.quality-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:30px;max-width:1200px;margin:0 auto}
+.quality-card{text-align:center;padding:30px}
+.quality-icon{width:70px;height:70px;background:#c8a45c;border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 20px;font-size:30px}
+.contact-section{background:white;padding:60px 20px}
+.contact-container{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:40px}
+.contact-method{padding:20px;background:#faf8f3;border-radius:15px;margin-bottom:15px}
+.contact-method h4{color:#1a3a1a;margin-bottom:5px}
+form input,form textarea{width:100%;padding:12px;margin-bottom:15px;border:1px solid #e0d5c5;border-radius:8px}
+form button{background:#1a3a1a;color:white;padding:15px 30px;border:none;border-radius:8px;cursor:pointer}
+.footer{background:#0a1f0a;color:white;padding:40px 20px;text-align:center}
+@media(max-width:768px){.products-grid{grid-template-columns:1fr}.quality-grid{grid-template-columns:1fr}.contact-container{grid-template-columns:1fr}.nav-links{display:none}}
+</style>
+</head>
+<body>
+
+<<nav class="navbar">
+<div class="nav-container">
+<a href="#" class="logo">🌿 SWADIKA</a>
+<ul class="nav-links">
+<li><a href="#home">Home</a></li>
+<li><a href="#products">Products</a></li>
+<li><a href="#quality">Quality</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</div>
+</nav>
+
+<section class="hero" id="home">
+<h1>Pure Spices from <span>India's Finest Farms</span></h1>
+<p>Handpicked, ethically sourced, and hygienically packed premium spices.</p>
+<a href="#products" class="btn">Explore Collection</a>
+<a href="#about" class="btn" style="background:transparent;color:white;border:2px solid white">Our Story</a>
+</section>
+
+<div class="trust-bar">
+<div class="trust-container">
+<div class="trust-item">
+<div style="font-size:30px">✓</div>
+<h4>FSSAI Licensed</h4>
+<p>Lic. 10019022009346</p>
+</div>
+<div class="trust-item">
+<div style="font-size:30px">🏢</div>
+<h4>UK VAT Registered</h4>
+<p>GB514072916</p>
+</div>
+<div class="trust-item">
+<div style="font-size:30px">♻️</div>
+<h4>Eco Packaging</h4>
+<p>Recyclable</p>
+</div>
+<div class="trust-item">
+<div style="font-size:30px">🏆</div>
+<h4>Quality Assured</h4>
+<p>Lab Tested</p>
+</div>
+</div>
+</div>
+
+<section class="section" id="products">
+<div class="section-header">
+<h2>Our Premium Collection</h2>
+<p>Available in 100g, 200g, and 500g sizes</p>
+</div>
+<div class="products-grid">
+<div class="product-card">
+<div class="product-image" style="background:#d4a574">🟡<<br>Turmeric</div>
+<div class="product-info">
+<h3>Turmeric Powder</h3>
+<p>Erode, Tamil Nadu</p>
+<div class="price">£2.99</div>
+<button class="btn-add">Add to Basket</button>
+</div>
+</div>
+<div class="product-card">
+<div class="product-image" style="background:#c44536">🌶️<<br>Chilli</div>
+<div class="product-info">
+<h3>Chilli Powder</h3>
+<p>Guntur, Andhra Pradesh</p>
+<div class="price">£2.49</div>
+<button class="btn-add">Add to Basket</button>
+</div>
+</div>
+<div class="product-card">
+<div class="product-image" style="background:#b5651d">🟠<<br>Paprika</div>
+<div class="product-info">
+<h3>Paprika</h3>
+<p>Premium Import</p>
+<div class="price">£3.49</div>
+<button class="btn-add">Add to Basket</button>
+</div>
+</div>
+<div class="product-card">
+<div class="product-image" style="background:#8fbc8f">🟢<<br>Coriander</div>
+<div class="product-info">
+<h3>Coriander Powder</h3>
+<p>Madhya Pradesh</p>
+<div class="price">£2.29</div>
+<button class="btn-add">Add to Basket</button>
+</div>
+</div>
+<div class="product-card">
+<div class="product-image" style="background:#cd853f">🟤<<br>Cumin</div>
+<div class="product-info">
+<h3>Cumin Powder</h3>
+<p>Rajasthan</p>
+<div class="price">£3.49</div>
+<button class="btn-add">Add to Basket</button>
+</div>
+</div>
+<div class="product-card">
+<div class="product-image" style="background:#d2b48c">⚫<<br>Cumin Seeds</div>
+<div class="product-info">
+<h3>Cumin Seeds</h3>
+<p>Gujarat</p>
+<div class="price">£3.99</div>
+<button class="btn-add">Add to Basket</button>
+</div>
+</div>
+<div class="product-card">
+<div class="product-image" style="background:#daa520">⭐<<br>Turmeric</div>
+<div class="product-info">
+<h3>Turmeric Premium</h3>
+<p>Erode, Tamil Nadu</p>
+<div class="price">£3.49</div>
+<button class="btn-add">Add to Basket</button>
+</div>
+</div>
+<div class="product-card">
+<div class="product-image" style="background:#dc143c">🔥<<br>Chilli</div>
+<div class="product-info">
+<h3>Chilli Premium</h3>
+<p>Guntur, Andhra Pradesh</p>
+<div class="price">£2.99</div>
+<button class="btn-add">Add to Basket</button>
+</div>
+</div>
+</div>
+</section>
+
+<section class="quality-section" id="quality">
+<div class="section-header" style="color:white">
+<h2>Quality Assurance</h2>
+<p>UK Food Safety Standards Compliant</p>
+</div>
+<div class="quality-grid">
+<div class="quality-card">
+<div class="quality-icon">🔬</div>
+<h3>Lab Tested</h3>
+<p>Comprehensive microbiological testing</p>
+</div>
+<div class="quality-card">
+<div class="quality-icon">🛡️</div>
+<h3>Hygiene Protocol</h3>
+<p>HACCP compliant facilities</p>
+</div>
+<div class="quality-card">
+<div class="quality-icon">📋</div>
+<h3>Traceability</h3>
+<p>Complete batch tracking</p>
+</div>
+</div>
+</section>
+
+<section class="contact-section" id="contact">
+<div class="section-header">
+<h2>Get in Touch</h2>
+</div>
+<div class="contact-container">
+<div>
+<div class="contact-method">
+<h4>📧 Business Email</h4>
+<p>hello@swadika.co.uk</p>
+</div>
+<div class="contact-method">
+<h4>📞 Customer Care</h4>
+<p>+44 20 0000 0000</p>
+<p>Mon-Fri, 9am - 6pm GMT</p>
+</div>
+<div class="contact-method">
+<h4>📍 Address</h4>
+<p>205 Plashet Grove, East Ham</p>
+<p>London, E6 1BX</p>
+<p>VAT: GB514072916</p>
+</div>
+</div>
+<div>
+<h3>Send Message</h3>
+<form>
+<input type="text" placeholder="Your Name" required>
+<input type="email" placeholder="Your Email" required>
+<<textarea placeholder="Your Message" rows="5" required></textarea>
+<button type="submit">Send Message</button>
+</form>
+</div>
+</div>
+</section>
+
+<<footer class="footer">
+<h2>🌿 SWADIKA SPICE CO.</h2>
+<p>Pure Spices. Pure Goodness.</p>
+<p>© 2024 Swadika Spice Co. (Perficient Global Services Ltd)</p>
+<p>VAT: GB514072916 | FSSAI: 10019022009346</p>
+</footer>
+
+</body>
+</html>
